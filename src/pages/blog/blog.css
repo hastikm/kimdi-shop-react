@@ -1,0 +1,27 @@
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btnContainer a{
+  text-decoration: none;
+  color: black;
+  margin: 50px;
+  padding: 15px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+
+}
+
+.btnContainer a:hover{
+  background-color: rgb(255, 131, 206);
+}
+
+h1{
+  text-align: center;
+}
+.par{
+  text-align: center;
+}

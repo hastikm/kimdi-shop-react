@@ -1,0 +1,38 @@
+.hover-button {
+  color: rgb(0, 0, 0) !important;
+  outline: none;
+  width: 80%;
+  background-color: rgb(255, 166, 42);
+  margin-right: 20px;
+  border: none;
+  border-radius: 20px;
+
+  /* اضافه شده برای پنهان بودن و مرکز شدن */
+ 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.my-card {
+  margin: 15px;
+  margin-right: 40px;
+  position: relative; /* مهم برای absolute بودن دکمه */
+  overflow: hidden;
+  border: none !important;
+}
+
+.hover-button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* وقتی موس روی کارت رفت، دکمه ظاهر شه */
+.my-card:hover .hover-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.my-card.my-card:hover{
+box-shadow: rgba(255, 123, 0, 0.4) 0px 30px 90px;
+}

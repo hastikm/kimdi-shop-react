@@ -1,0 +1,43 @@
+.my-top-item{
+  padding: 5px;
+}
+
+.my-top-item i{
+color: rgb(0, 0, 0);
+margin-right: 10px;
+}
+
+.itemm{
+  padding: 15px !important;
+  font-size: 17px !important;
+  font-weight: 800;
+  
+  
+}
+
+.itemm:hover{
+  cursor: pointer;
+  background-color: rgb(247, 191, 36);
+}
+
+.itemm a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-family: 'lalezar';
+}
+
+p{
+  color: rgb(111, 111, 111);
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px; /* یا هر ارتفاع ثابتی که می‌خوای */
+  transition: none !important;
+}

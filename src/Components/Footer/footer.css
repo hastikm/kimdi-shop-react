@@ -1,0 +1,37 @@
+.my-footer {
+  margin-top: 50px;
+  padding-top: 30px; /* فاصله از خط بالا */
+
+}
+
+.my-footer a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
+.my-footer a:hover {
+  color: rgb(255, 174, 0);
+}
+
+.fpr-p {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* فاصله بین لینک‌ها */
+  padding: 10px;
+}
+
+.fpr-main {
+  padding: 10px;
+}
+
+.fpr-main p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.fpr-main h1,
+.fpr-p h1 {
+  margin-bottom: 20px;
+  font-family: 'lalezar';
+}
