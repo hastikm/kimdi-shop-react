@@ -6,11 +6,12 @@ import About from './pages/about/about.js';
 import Albom2 from './Components/albom/albom2.js';
 import CardeItem from './Components/curseItem/curseItem.js';
 import Setting from './pages/setting/setting.js';
+import PrivateRouts from '../src/Components/privateRours.js'
 
 let Router = [
   { path: '/', element: <Home /> },
-  { path: '/panel', element: <Panel /> },
-  { path: '/login', element: <Login /> },
+  { path: '/panel', element: <PrivateRouts>  <Panel /> </PrivateRouts> },
+  { path: '/login', element:  <Login />  },
   {
     path: '/blog',
     element: <Blog />,

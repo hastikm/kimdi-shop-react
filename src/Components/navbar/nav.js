@@ -5,9 +5,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../navbar/nav.css';
+import { useState } from 'react';
+import { isLogin } from "../../pages/login/utilis";
 
 function MyNav() {
+  const [loginStatus , setLoginStatus] = useState(isLogin() ? ' خروج' : 'ورود')
   const expand = 'md';
+
+  const LogourHandler = () => {
+    document.cookie = "username=admin; expires=Thu, 18 Dec 2013 12:00:00 UTC"
+    setLoginStatus('ورود')
+  }
   return(
 
 
@@ -31,7 +39,11 @@ function MyNav() {
                   <NavLink to='/about' className='nav-link'> آلبوم </NavLink>
                    <NavLink to='/blog' className='nav-link'>برچسب</NavLink>
                    <NavLink to='/panel' className='nav-link'>پنل</NavLink>
-                   <NavLink to='/login' className='nav-link'>ورود</NavLink>
+                  {isLogin() ?
+                 <NavLink to='/login' className='nav-link' onClick={LogourHandler}>{loginStatus}</NavLink> :
+                  <NavLink to='/login' className='nav-link'>{loginStatus}</NavLink>
+                
+                }
                 </Nav>
             
               </Offcanvas.Body>
