@@ -4,6 +4,7 @@ import {BlogData} from '../blog/blogData'
 import BlogItem from './BlogItem';
 import { Row  , Col , Container} from 'react-bootstrap';
 
+
 function Blog(){
 
   return(
@@ -11,6 +12,7 @@ function Blog(){
 
     <MyNav/>
 
+    
     <Container style={{ maxWidth: "1200px" }}>
   <Row className="justify-content-center g-3">
     {BlogData.map((bitem) => (
