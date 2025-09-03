@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kimdi-shop-website-react/static/css/main.21282c6e.css",
+    "main.js": "/kimdi-shop-website-react/static/js/main.d21d27d6.js",
+    "static/media/Lalezar-Regular.ttf": "/kimdi-shop-website-react/static/media/Lalezar-Regular.241ca811c53de4ed36a4.ttf",
+    "static/media/کارت-بازی-کیمدی۱.jpg": "/kimdi-shop-website-react/static/media/کارت-بازی-کیمدی۱.dbc7eee176ce120f46e9.jpg",
+    "static/media/2024-6-kimdi-site-jpg": "/kimdi-shop-website-react/static/media/2024-6-kimdi-site-66cc7d122b5676090d02f089.eefd08d096d09d6157c4.jpg",
+    "static/media/photo_۲۰۲۴-۱۱-۰۵_۱۶-۲۷-۵۲.jpg": "/kimdi-shop-website-react/static/media/photo_۲۰۲۴-۱۱-۰۵_۱۶-۲۷-۵۲.3a42028723079da454af.jpg",
+    "static/media/yekan-regular.ttf": "/kimdi-shop-website-react/static/media/yekan-regular.aadb3c1f194aa26446fd.ttf",
+    "static/media/zCmwfUuK17CmZ0pGfRqEYJaiwjTPHHp41HhNvg53.jpg": "/kimdi-shop-website-react/static/media/zCmwfUuK17CmZ0pGfRqEYJaiwjTPHHp41HhNvg53.b9c5190050999b52bf99.jpg",
+    "static/media/Vazir-Light.woff": "/kimdi-shop-website-react/static/media/Vazir-Light.2d11d5ed66bda82c1274.woff",
+    "static/media/Vazir-Thin.woff2": "/kimdi-shop-website-react/static/media/Vazir-Thin.8928717cb75177208446.woff2",
+    "static/media/1344x120-Desktop-Summer-3D.jpg": "/kimdi-shop-website-react/static/media/1344x120-Desktop-Summer-3D.600dc1f4a17aacd3c397.jpg",
+    "static/media/Tanha-FD.woff2": "/kimdi-shop-website-react/static/media/Tanha-FD.e0e7707196b3086b6422.woff2",
+    "index.html": "/kimdi-shop-website-react/index.html",
+    "main.21282c6e.css.map": "/kimdi-shop-website-react/static/css/main.21282c6e.css.map",
+    "main.d21d27d6.js.map": "/kimdi-shop-website-react/static/js/main.d21d27d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21282c6e.css",
+    "static/js/main.d21d27d6.js"
+  ]
+}
