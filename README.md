@@ -6,7 +6,7 @@ This is a **practice project built with React**.
 It’s a simple **Admin Dashboard** where the admin can **add posts** and manage content.  
 The project also includes a **login feature** for authentication.  
 
-![website pic](./src/assets/imge/123.png)
+![website pic](./src/assets/imge/00.png)
 ``
 
 
