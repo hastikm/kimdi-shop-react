@@ -1,26 +1,32 @@
 import '../blog/blog.css';
 import MyNav from '../../Components/navbar/nav';
-import { Link , Outlet } from 'react-router-dom';
+import {BlogData} from '../blog/blogData'
+import BlogItem from './BlogItem';
+import { Row  , Col , Container} from 'react-bootstrap';
+
 function Blog(){
 
   return(
 <>
 
     <MyNav/>
-    <div className="container-wrapper">
-      <h1>صفحه برچسب ها</h1>
-      <hr />
-      <div className="btnContainer">
-       <Link to="/blog/num1" className="linkbtn"> <p className='par'>برچسب شماره 1</p></Link>
-       <Link to="/blog/num2" className="linkbtn"><p className='par'>برچسب شماره 2</p>  </Link>
-       <Link to="/blog/num3" className="linkbtn"> <p className='par'>برچسب شماره 3</p></Link>   
-      </div>
-      <hr />
-  
-    </div>
-    
-    <Outlet/>
 
+    <Container style={{ maxWidth: "1200px" }}>
+  <Row className="justify-content-center g-3">
+    {BlogData.map((bitem) => (
+      <Col
+        key={bitem.id}
+        xs={12}
+        sm={6}
+        md={4}
+        lg={3}
+        className="d-flex justify-content-center"
+      >
+        <BlogItem {...bitem} />
+      </Col>
+    ))}
+  </Row>
+</Container>
 </>
 
   )

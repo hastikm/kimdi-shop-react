@@ -7,7 +7,7 @@ function Albom({imger , price3 , name1 , id}) {
 <>
 
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imger} />
+      <Card.Img  variant="top" src={imger} />
       <Card.Body>
         <Card.Title>{name1}</Card.Title>
         <Card.Text>

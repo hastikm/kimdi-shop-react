@@ -1,13 +1,15 @@
 .my-footer {
   margin-top: 50px;
   padding-top: 30px; /* فاصله از خط بالا */
-
+  display: flex;
+  flex-wrap: wrap; /* برای ریسپانسیو */
 }
 
 .my-footer a {
   text-decoration: none;
   color: gray;
   font-size: 18px;
+  margin: 5px 0; /* فاصله عمودی بین لینک‌ها */
 }
 
 .my-footer a:hover {
@@ -17,21 +19,34 @@
 .fpr-p {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* فاصله بین لینک‌ها */
+  gap: 10px; /* فاصله بین لینک‌ها */
   padding: 10px;
+  align-items: flex-start; /* تراز کردن متن‌ها از چپ */
 }
 
 .fpr-main {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* فاصله بین h1 و p و img */
+  align-items: flex-start;
 }
 
-.fpr-main p {
-  margin-top: 10px;
+.fpr-main p,
+.fpr-p a {
+  margin: 0; /* حذف مارجین پیش‌فرض */
   font-size: 16px;
+  line-height: 1.4;
 }
 
 .fpr-main h1,
 .fpr-p h1 {
-  margin-bottom: 20px;
+  margin: 0 0 10px 0; /* فاصله پایین h1 */
   font-family: 'lalezar';
+  line-height: 1.2;
+}
+
+.fpr-main img {
+  max-width: 100%;
+  height: auto;
 }

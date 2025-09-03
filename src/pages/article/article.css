@@ -1,3 +1,71 @@
 .everything{
   margin-bottom: 150px !important;
+}.everything {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* فاصله بین کارت‌ها */
+  margin-bottom: 150px !important;
+}
+
+.myy-card {
+  width: 18rem;
+  border: none !important;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.myy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 40px;
+}
+
+.imgek {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.myy-card .card-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.myy-card .card-text {
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+}
+
+.myy-card .card-footer {
+  background-color: transparent;
+  border-top: none;
+  text-align: center;
+}
+
+.myy-card .card-footer small {
+  cursor: pointer;
+  color: rgba(255, 107, 2, 1);
+  transition: color 0.2s ease;
+}
+
+.myy-card .card-footer small:hover {
+  color: rgba(255, 140, 0, 1);
+}
+
+/* ریسپانسیو */
+@media (max-width: 992px) {
+  .myy-card {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .myy-card {
+    width: 90%; /* کارت‌ها در موبایل تمام عرض با فاصله خودکار */
+    margin: 10px auto;
+  }
 }

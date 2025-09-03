@@ -13,6 +13,7 @@ import { useState } from 'react';
 import Article from '../article/article';
 import Footer from '../../Components/Footer/footer';
 import {CourseData} from '../../Components/curseData';
+import kimdis from '../../assets/imge/1344x120-Desktop-Summer-3D.jpg'
 function Home() {
 
 
@@ -73,8 +74,12 @@ function Home() {
     </Col>
         </Row>
         <Row className="g-1">
-         <h1 >کیمدی کارت فوتبال</h1>
-         <p>اسطوره ات رو خودت انتخاب کن</p>
+        
+
+         <img src={kimdis} alt="" />
+
+          <h1 style={{marginTop : '40px'}}>کیمدی کارت فوتبال</h1>
+         <p style={{fontSize : '25px'}}>اسطوره ات رو خودت انتخاب کن </p>
 {cardee.map((cardd, id) => (
   <Col key={id}>
     <Cursee {...cardd} />

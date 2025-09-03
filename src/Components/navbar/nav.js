@@ -34,7 +34,7 @@ function MyNav() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3" style={{fontFamily: 'lalezar' , fontSize: '20px'}}>
                   <NavLink to='/' className='nav-link'>کیمدی</NavLink>
                   <NavLink to='/about' className='nav-link'> آلبوم </NavLink>
                    <NavLink to='/blog' className='nav-link'>برچسب</NavLink>

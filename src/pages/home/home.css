@@ -36,8 +36,43 @@ p{
   margin-right: 10px;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  height: 500px; /* یا هر ارتفاع ثابتی که می‌خوای */
-  transition: none !important;
+/* کانتینر اصلی اسلایدر */
+.carousel,
+.carousel-item {
+  width: 100%;
+  height: 600px; /* ارتفاع بیشتر برای نمایش کامل تصویر */
+  overflow: hidden;
 }
+
+/* تصاویر داخل اسلایدر */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تصویر کل فضای کارت را بپوشاند */
+  object-position: center; /* تصویر وسط بچینه */
+  transition: none; /* هیچ زومی ایجاد نشود */
+}
+
+/* برای تبلت */
+@media (max-width: 992px) {
+  .carousel,
+  .carousel-item {
+    height: 500px;
+  }
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+  .carousel,
+  .carousel-item {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel,
+  .carousel-item {
+    height: 250px;
+  }
+}
+
