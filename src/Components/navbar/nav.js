@@ -21,7 +21,7 @@ function MyNav() {
 
 <Navbar key={expand} expand={expand} className=" mb-3" style={{backgroundColor: "rgb(251, 202, 39)"}}>
           <Container>
-            <Navbar.Brand href="#" style={{fontFamily : 'lalezar' , fontSize : '30px'}}>کیمدی کینگ </Navbar.Brand>
+            <Navbar.Brand href="#" style={{fontFamily : 'lalezar' , fontSize : '40px'}}>کیمدی کینگ </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

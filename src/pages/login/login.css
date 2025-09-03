@@ -1,207 +1,81 @@
-/* You can find real author of this layout animation on codepen.io unfortunatly I lost his or her url to code
-
--- This is most copied of him, or her and with a little --fix-- 
-*/
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: sans-serif;
- 
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-input {
-  outline: none;
-  border: none;
-  background: transparent;
-}
-
+/* لاگین باکس وسط صفحه */
 .login-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
-  padding: 40px;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  width: 420px;
+  max-width: 95%;
+  padding: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9); /* سفید شفاف */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* عنوان */
 .login-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
+  margin-bottom: 28px;
+  font-size: 28px;
+  font-weight: 700;
   text-align: center;
+  color: #000; /* مشکی */
 }
 
+/* گروه ورودی‌ها */
 .login-box .user-box {
   position: relative;
+  margin-bottom: 28px;
 }
 
-.login-box .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  color: #fff;
-  transition: 500ms;
-  font-size: 16px;
-  pointer-events: none;
-}
-
+/* ورودی‌ها */
 .login-box .user-box .input {
   width: 100%;
-  padding: 10px 0;
-  color: #fff;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #fff;
-}
-
-.input:active ~ label {
-  top: -20px;
-  color: #03e9f4;
-  font-size: 12px;
- }
-
-.input:focus ~ label {
- top: -20px;
- color: #03e9f4;
- font-size: 12px;
-}
-
-.input:valid ~ label  {
-  top: -20px;
-  color: #03e9f4;
-  font-size: 12px;
- }
-
-
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
+  padding: 14px 0 8px;
   font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: all .5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-  color: #03e9f4;
+  color: #000; /* متن مشکی */
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  outline: none;
 }
 
-.login-box a:hover {
-  background-color: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+.login-box .user-box .input:focus {
+  border-bottom-color: #000;
 }
 
-.login-box a span {
+/* لیبل‌ها */
+.login-box .user-box .label {
   position: absolute;
-  display: block;
-}
-
-@keyframes btnAnimA {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btnAnimA 1500ms linear infinite;
-  /* animation-delay: 200ms; */
-  animation-fill-mode: backwards;
-  animation-play-state: running;
-}
-
-
-@keyframes btnAnimB {
-  0% {
-    top: -100%
-  }
-  50% {
-    top: 100%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: btnAnimB 1500ms linear infinite;
-  animation-delay: 300ms;
-}
-
-
-@keyframes btnAnimC {
-  0% {
-    right: -100%;
-  }
-  50% {
-    right: 100%;
-  }
-  100% {
-    right: 100%;
-  }
-}
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: btnAnimC 1500ms linear infinite;
-  animation-delay: 600ms;
-}
-
-
-@keyframes btnAnimD {
-  0% {
-    bottom: -100%;
-  }
-  50%,100% {
-    bottom: 100%;
-  }
-}
-.login-box a span:nth-child(4) {
   left: 0;
-  bottom: -100%;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: btnAnimD 1500ms linear infinite;
-  animation-delay: 900ms;
-} 
+  top: 14px;
+  font-size: 16px;
+  color: #000; /* مشکی */
+  pointer-events: none;
+  transition: all .2s ease;
+}
 
+/* حرکت لیبل */
+.login-box .user-box .input:focus ~ .label,
+.login-box .user-box .input:not(:placeholder-shown) ~ .label {
+  top: -18px;
+  font-size: 14px;
+  color: #000; /* مشکی */
+}
+
+/* دکمه */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+ 
+}
+
+.submit-btn:hover {
+  background: #333;
+}

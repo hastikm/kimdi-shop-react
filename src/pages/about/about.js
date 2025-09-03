@@ -7,12 +7,15 @@ import Card from 'react-bootstrap/Card';
 
 function About() {
   const [albums] = useState([
-    { id: 1, imger: 'https://cdn.snappshop.ir/products/ed/ad/9ec6b69c-4af5-4859-bf3b-2dcb3890edad.jpg?q=75&w=576', price3: '500,000 ', name1: 'آلبوم 2025' },
-    { id: 2, imger: 'https://cdn.snappshop.ir/products/b0/c1/9e538acd-8a81-4b3b-9664-49c25840b0c1.jpg?q=75&w=576', price3: '350,000 ', name1: 'آلبوم رونالدو 2025' },
-    { id: 3, imger: 'https://files.emalls.ir/files/Products/automatic/25833945/mno3j3xx_thumb3.jpg', price3: '400,000 ', name1: 'آلبوم 2025 مسی' },
-    { id: 4, imger: 'https://cdn.snappshop.ir/products/66/c8/9e538a44-9bdf-4f24-a788-38c8090466c8.jpg?q=75&w=576', price3: '400,000 ', name1: 'آلبوم 2025 ترکیبی' },
-    { id: 5, imger: 'https://cdn.snappshop.ir/products/ea/ca/9eba9f24-918f-4ce2-9678-91bb93e0eaca.jpg?q=75&w=576', price3: '100,000 ', name1: ' آلبوم اختصاصی کیمدی ' },
-    { id: 6, imger: 'https://cdn.snappshop.ir/products/a3/7a/9e45fd3a-8b25-4211-9f7c-ac8af6bfa37a.png?q=75&w=576', price3: '250,000 ', name1: 'آلبوم 2025 یامال' },
+    { id: 1, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%D8%B2%D9%84%D8%A7%D8%AA%D8%A7%D9%86-%D8%8C-%D8%B5%D9%84%D8%A7%D8%AD-%D9%88-%D8%A8%DA%A9%D8%A7%D9%85.webp', price3: '500,000 ', name1: 'آلبوم 2025' },
+    { id: 2, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%DB%8C%D8%A7%D9%85%D8%A7%D9%84-%D9%88-%D8%A7%D9%85%D8%A8%D8%A7%D9%BE%D9%87.webp', price3: '350,000 ', name1: 'آلبوم رونالدو 2025' },
+    { id: 3, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%D9%85%D8%A7%D8%B1%D8%A7%D8%AF%D9%88%D9%86%D8%A7-%D8%8C-%D9%BE%D9%84%D9%87-%D9%88-%D9%85%D9%88%D9%84%D8%B1.webp', price3: '400,000 ', name1: 'آلبوم 2025 مسی' },
+    { id: 4, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%D9%85%D8%AD%D8%A8%D9%88%D8%A8-%D9%87%D8%A7.webp', price3: '400,000 ', name1: 'آلبوم 2025 ترکیبی' },
+    { id: 5, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%DA%AF%D9%88%D8%A7%D8%B1%D8%AF%DB%8C%D9%88%D9%84%D8%A7-%D8%AA%D9%88%D9%BE-%D8%B7%D9%84%D8%A7.webp', price3: '100,000 ', name1: ' آلبوم اختصاصی کیمدی ' },
+    { id: 6, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%D9%87%D8%A7.webp', price3: '250,000 ', name1: 'آلبوم 2025 یامال' },
+    { id: 7, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%DA%98%D8%A7%D8%A8%DB%8C-%D8%A2%D9%84%D9%88%D9%86%D8%B3%D9%88-%D8%AA%D9%88%D9%BE-%D8%B7%D9%84%D8%A7.webp', price3: '250,000 ', name1: 'آلبوم 2025 یامال' },
+    { id: 8, imger: 'https://kimdikart.ir/wp-content/uploads/2025/07/%D8%A2%D9%84%D8%A8%D9%88%D9%85-%DA%A9%DB%8C%D9%85%D8%AF%DB%8C-120-%DA%A9%D8%A7%D8%B1%D8%AA%DB%8C-%D8%A8%D8%A7%D9%84%D8%A7%DA%A9-%D9%88-%DA%A9%D8%B1%D9%88%D8%B3.webp', price3: '250,000 ', name1: 'آلبوم 2025 یامال' },
+   
   ]);
 
   const handleAdd = (name) => {
@@ -25,7 +28,7 @@ function About() {
       <Container className="album-container">
         <Row>
           {albums.map((item) => (
-            <Col key={item.id} xs={12} sm={6} md={4} className="d-flex justify-content-center">
+            <Col key={item.id} xs={12} sm={6} md={3} className="d-flex justify-content-center">
               <Card className="album-card">
                 <Card.Img variant="top" src={item.imger} />
                 <Card.Body>
