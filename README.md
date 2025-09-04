@@ -2,32 +2,36 @@
 
 🔗 [Live Demo](https://kimdi-shop-react-vxxt-iqenmcwlq-hastikms-projects.vercel.app/)  
 
-This is a **practice project built with React**.  
-It’s a simple **Admin Dashboard** where the admin can **add posts** and manage content.  
-The project also includes a **login feature** for authentication.  
+.
+It’s a simple Admin Dashboard where the admin can add posts and manage content.
+The project also includes a login feature for authentication.
 
 ![website pic](./src/assets/imge/00.png)
 ``
 
 
 ---
+Features
 
-## ✨ Features  
-- Admin login system  
-- Dashboard for adding posts  
-- Responsive UI  
-- Built with **React**  
-- Styled with **Bootstrap**  
-- API requests handled using **Axios**  
-- Fake backend powered by **db.json** (JSON Server)  
----
+Admin login system
 
-## 🚀 Tech Stack  
-- **React**  
-- **Bootstrap**  
-- **Axios**  
-- **React Router**  
-- **JSON Server (db.json)**  
+Dashboard for adding posts
+
+Responsive UI
+
+Built with React
+
+Styled with Bootstrap
+
+Fully frontend-driven (no external backend)
+ ----------
+🚀 Tech Stack
+
+React
+
+Bootstrap
+
+React Router
 
 ---
 
