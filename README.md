@@ -1,6 +1,6 @@
 # KImdi shop- React Practice Project  
 
-🔗 [Live Demo](https://hastikm.github.io/kimdi-shop-website-react/)  
+🔗 [Live Demo](https://kimdi-shop-react-vxxt-iqenmcwlq-hastikms-projects.vercel.app/)  
 
 This is a **practice project built with React**.  
 It’s a simple **Admin Dashboard** where the admin can **add posts** and manage content.  
